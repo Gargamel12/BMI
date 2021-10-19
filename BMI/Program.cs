@@ -6,7 +6,23 @@ namespace BMI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            double Hmotnost;
+            Double Výška;
+            Console.WriteLine("Výpočet BMI");
+            Console.WriteLine("==========");
+            Console.Write("Zadej váhu(kg):");
+            Hmotnost = double.Parse(Console.ReadLine());
+            Console.WriteLine("Zadej výšku(m):");
+            Výška= double.Parse(Console.ReadLine());
+            var BMI = Hmotnost / (Výška * Výška);
+            Console.WriteLine($"Vaše BMI je {BMI} ");
+            Console.ReadLine();
+            if (BMI <= 20) ;
+            {
+                Console.Write("Jsi vyžle");
+            }
+            
+            
         }
     }
 }
